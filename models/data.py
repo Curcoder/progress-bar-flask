@@ -1,4 +1,5 @@
 
+# Add or remove skills to the list to dynamically generate or remove a progress bar
 
 skills = [
     {
