@@ -1,8 +1,14 @@
+
+
+
+
+
 {% extends 'index.html' %}
 
 {% block content %}
-
+{#    Loop over the list to get to the dictionary#}
     {% for skill in skills%}
+{#        Loop over the dictionary to get the Keys and Values#}
         {% for lang, score in skill.items() %}
             <label for="{{ lang }}" class="progressBar_label"><h4>{{ lang }}</h4>
               <div class="progressBar" name="{{ lang }}">

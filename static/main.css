@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 800px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 10px;
 }
 
@@ -40,18 +40,24 @@ body {
   justify-content: flex-end;
   border-radius: 10px;
   margin: 3px;
-  font-size: 1rem;
   background-image: linear-gradient(0deg, #030, #060, #030);
   animation: loadBar 1s ease-in;
-}
-
-@keyframes loadBar {
-  from {width: 1%;}
-    to {width: 100%;}
 }
 
 .progressBar_meter span {
   margin-right: 10px;
   color: #fff;
   font-family: 'Ubuntu';
+  font-size: 1rem;
+  animation: loadText .7s ease-in;
+}
+
+@keyframes loadBar {
+  from {width: 5%;}
+    to {width: 100%;}
+}
+
+@keyframes loadText {
+  from {opacity: 0}
+  to {opacity: 1}
 }
