@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    {% for lang, score in bar_data.items() %}
+        <label for="{{ lang }}" class="progressBar_label"><h4>{{ lang }}</h4>
+          <div class="progressBar" name="{{ lang }}">
+            <div class="progressBar_meter" style="width: {{ score }}%;">
+              <span>{{ score }}%</span>
+            </div>
+          </div>
+        </label>
+    {% endfor %}
+
+{% endblock %}
