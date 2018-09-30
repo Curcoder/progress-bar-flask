@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <title>Progress Bar</title>
+</head>
+<body>
+
+  <div class="barContainer">
+
+    <label for="html" class="progressBar_label"><h4>HTML</h4>
+      <div class="progressBar" name="html">
+        <div class="progressBar_meter" style="width: 95%;">
+          <span>95%</span>
+        </div>
+      </div>
+    </label>
+
+    <label for="css" class="progressBar_label"><h4>CSS</h4>
+      <div class="progressBar" name="css">
+        <div class="progressBar_meter" style="width: 90%;">
+          <span>90%</span>
+        </div>
+      </div>
+    </label>
+
+    <label for="js" class="progressBar_label"><h4>JavaScript</h4>
+      <div class="progressBar" name="js">
+        <div class="progressBar_meter" style="width: 60%;">
+          <span>60%</span>
+        </div>
+      </div>
+    </label>
+
+    <label for="python" class="progressBar_label"><h4>Python</h4>
+      <div class="progressBar" name="python">
+        <div class="progressBar_meter" style="width: 75%;">
+          <span>75%</span>
+        </div>
+      </div>
+    </label>
+
+  </div>
+
+</body>
+</html>

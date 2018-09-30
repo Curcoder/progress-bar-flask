@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.barContainer {
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.progressBar_label {
+  font-family: 'Ubuntu';
+  background: #ccc;
+  margin:5px;
+}
+
+.progressBar_label h4 {
+  margin-left: 10px;
+}
+
+.progressBar {
+  height: 40px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px #666;
+}
+
+.progressBar_meter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 10px;
+  margin: 5px;
+  background-image: linear-gradient(0deg, #030, #060, #030);
+  animation: loadBar 1s ease-in;
+}
+
+@keyframes loadBar {
+  from {width: 1%;}
+    to {width: 100%;}
+}
+
+.progressBar_meter span {
+  margin-right: 10px;
+  color: #fff;
+  font-family: 'Ubuntu';
+}
